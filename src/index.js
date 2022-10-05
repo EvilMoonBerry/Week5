@@ -63,6 +63,7 @@ const getName = (feature, layer) => {
   const city = feature.properties.name;
   //console.log(city);
   layer.bindPopup(city);
+  layer.bindTooltip(city);
 };
 
 const styles = (feature) => {
